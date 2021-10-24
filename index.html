@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Cadastro de Usuário</title>
+</head>
+<body>
+<h1>Cadastro</h1>
+<p>Você irá preencher a seguir, uma série de campos, o que permitirá que seu cadastro seja salvo em nosso sistema.
+<br>
+Para tanto, atente-se que todos os campos com asterisco são de preenchimento obrigatório.</p>
+<br>
+<form onsubmit="salvar()">
+<label for="nomecompleto">* Nome Completo:</label>
+<input type="text" name="nomecompleto" id="nomecompleto" required>
+<br>
+<label>sexo</label>
+<select name="sexo">
+<option value="f">Feminino</option>
+<option value="m">Masculino</option>
+</select>
+<br>
+<label for="cpf">* Informe o número do seu CPF</label>
+<input type="text" name="cpf" id="cpf" required>
+<br>
+<label for="rg">Informe seu RG:</label>
+<input type="text" name="rg" id="rg">
+<br>
+<label for="datanascimento">Data de nascimento</label>
+<input type="text" name="datanascimento" id="datanascimento">
+<br>
+<label for="estado">selecione o seu estado</label>
+<select name="estado" id="estado">
+<option value="Ac">Acre</option>
+<option value="Al">Alagoas</option>
+<option value="Ap">Amapá</option>
+<option value="Am">Amazonas</option>
+<option value="Ba">Bahia</option>
+<option value="DF">Brasília</option>
+<option value="Ce">Ceará</option>
+<option value="ES">Espírito Santo</option>
+<option value="Go">Goiás</option>
+<option value="Ma">Maranhão</option>
+<option value="Mt">Mato Grosso</option>
+<option value="MS">Mato Grosso do Sul</option>
+<option value="MG">Minas Gerais</option>
+<option value="Pa">Pará</option>
+<option value="Pb">Paraíba</option>
+<option value="Pr">Paraná</option>
+<option value="Pe">Pernambuco</option>
+<option value="Pi">Piauí</option>
+<option value="RJ">Rio de Janeiro</option>
+<option value="RN">Rio Grande do Norte</option>
+<option value="RS">Rio Grande do Sul</option>
+<option value="Ro">Rondônia</option>
+<option value="Rr">Roraima</option>
+<option value="SC">Santa Catarina</option>
+<option value="SP">São Paulo</option>
+<option value="Se">Sergipe</option>
+<option value="To">Tocantins</option>
+</select>
+<br>
+<label for="cidade">Informe sua cidade:</label>
+<input type="text" name="cidade" id="cidade">
+<br>
+<label for="cep">digite aqui o seu CEP</label>
+<input type="text" name="cep" id="cep">
+<br>
+<label for="endereço">* Informe seu logradouro, ex: Avenida, Travessa, Rua:</label>
+<input type="text" name="endereço" id="endereço" required>
+<br>
+<label for="numero">*Número</label>
+<input type="number" name="numero" id="numero" required>
+<br>
+<label for="telefonefixo">informe um número de telefone fixo:</label>
+<input type="tel" name="telefonefixo" id="telefonefixo">
+<br>
+<label for="telefonecelular">* Informe seu celular:</label>
+<input type="tel" name="telefonecelular" id="telefonecelular" riquered>
+<br>
+<input type="submit" value="Enviar">
+</form>
+<script>
+function salvar(){
+alert("Seus dados foram enviados. Obrigado.")
+}
+</script>
+</body>
+</html>
